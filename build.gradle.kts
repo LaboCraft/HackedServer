@@ -42,13 +42,13 @@ project(":hackedserver-core") {
 project(":hackedserver-spigot") {
 
     dependencies {
-        compileOnly("org.spigotmc:spigot-api:1.20.2-R0.1-SNAPSHOT")
-        compileOnly("com.comphenix.protocol:ProtocolLib:5.0.0-SNAPSHOT")
-        compileOnly("net.kyori:adventure-text-minimessage:4.14.0")
+        compileOnly("org.spigotmc:spigot-api:1.20.4-R0.1-SNAPSHOT")
+        compileOnly("com.comphenix.protocol:ProtocolLib:5.2.0-SNAPSHOT")
+        compileOnly("net.kyori:adventure-text-minimessage:4.17.0")
         compileOnly("io.netty:netty-all:4.1.68.Final")
         compileOnly (project(path = ":hackedserver-core", configuration =  "shadow"))
 
-        implementation("dev.jorel:commandapi-bukkit-shade:9.2.0")
+        implementation("dev.jorel:commandapi-bukkit-shade:9.4.1")
         implementation("net.kyori:adventure-platform-bukkit:4.3.0")
         implementation("org.bstats:bstats-bukkit:3.0.0")
     }
@@ -63,7 +63,7 @@ project(":hackedserver-bungeecord") {
 
     dependencies {
         compileOnly("net.md-5:bungeecord-api:1.19-R0.1-SNAPSHOT")
-        compileOnly("net.kyori:adventure-text-minimessage:4.14.0")
+        compileOnly("net.kyori:adventure-text-minimessage:4.17.0")
         compileOnly(project(path = ":hackedserver-core", configuration = "shadow"))
 
         implementation("net.kyori:adventure-platform-bungeecord:4.3.0")
